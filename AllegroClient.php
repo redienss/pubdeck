@@ -34,9 +34,9 @@ class AllegroClient {
     {
         // Request for doQuerySysStatus
         $request = array(
-           'sysvar'     => 1,
-           'country-id' => $this->countryId,
-           'webapi-key' => $this->webApiKey
+           'sysvar'    => 1,
+           'countryId' => $this->countryId,
+           'webapiKey' => $this->webApiKey
         );
         
         // Debug
@@ -45,10 +45,10 @@ class AllegroClient {
         }
         
         // Get version key
-        $response = $this->soapClient->__soapCall("doQuerySysStatus", $request);
+        $response = $this->soapClient->doQuerySysStatus($request);
         
         // Return version key
-        return $response['ver-key'];
+        return $response->verKey;
     }
     
     /**
@@ -60,11 +60,11 @@ class AllegroClient {
     {
         // Request for doLogin
         $request = array(
-           'user-login'    => $this->userLogin,
-           'user-password' => $this->userPassword,
-           'country-code'  => $this->countryId,
-           'webapi-key'    => $this->webApiKey,
-           'local-version' => $this->versionKey
+           'userLogin'    => $this->userLogin,
+           'userPassword' => $this->userPassword,
+           'countryCode'  => $this->countryId,
+           'webapiKey'    => $this->webApiKey,
+           'localVersion' => $this->versionKey
         );
         
         // Debug
@@ -73,10 +73,10 @@ class AllegroClient {
         }    
         
         // Logon user
-        $response = $this->soapClient->__soapCall("doLogin", $request);
+        $response = $this->soapClient->doLogin($request);
         
         // Get session ID
-        return $response['session-handle-part'];
+        return $response->sessionHandlePart;
     }
     
     /**
@@ -92,23 +92,23 @@ class AllegroClient {
     {
         $field = array(
             'fid' => $id, 
-            'fvalue-string' => '',
-            'fvalue-int' => 0,
-            'fvalue-float' => 0,
-            'fvalue-image' => 0,
-            'fvalue-datetime' => 0,
-            'fvalue-date' => '',
-            'fvalue-range-int' => array(
-                'fvalue-range-int-min' => 0,
-                'fvalue-range-int-max' => 0
+            'fvalueString' => '',
+            'fvalueInt' => 0,
+            'fvalueFloat' => 0,
+            'fvalueImage' => 0,
+            'fvalueDatetime' => 0,
+            'fvalueDate' => '',
+            'fvalueRangeInt' => array(
+                'fvalueRangeIntMin' => 0,
+                'fvalueRangeIntMax' => 0
             ),
-            'fvalue-range-float' => array(
-                'fvalue-range-float-min' => 0,
-                'fvalue-range-float-max' => 0
+            'fvalueRangeFloat' => array(
+                'fvalueRangeFloatMin' => 0,
+                'fvalueRangeFloatMax' => 0
             ),
-            'fvalue-range-date' => array(
-                'fvalue-range-date-min' => '',
-                'fvalue-range-date-max' => ''
+            'fvalueRangeDate' => array(
+                'fvalueRangeDateMin' => '',
+                'fvalueRangeDateMax' => ''
             )
         );
         
@@ -175,38 +175,38 @@ class AllegroClient {
         
         // Request for doNewAuctionExt
         $request = array(
-            'session-handle' => $this->sessionId,
+            'sessionHandle' => $this->sessionId,
             'fields' => array(
-                $this->createFid(FID_ITEM_NAME,                    'fvalue-string', $deckName),
-                $this->createFid(FID_CATEGORY,                     'fvalue-int',    OFFER_CATEGORY),
-                $this->createFid(FID_DURATION,                     'fvalue-int',    OFFER_DURATION),
-                $this->createFid(FID_ITEM_COUNT,                   'fvalue-int',    OFFER_ITEM_COUNT),
-                $this->createFid(FID_BUY_NOW_PRICE,                'fvalue-float',  $deckPrice),
-                $this->createFid(FID_COUNTRY,                      'fvalue-int',    WEBAPI_COUNTRY),
-                $this->createFid(FID_STATE,                        'fvalue-int',    OFFER_STATE),
-                $this->createFid(FID_CITY,                         'fvalue-string', OFFER_CITY),
-                $this->createFid(FID_SHIPMENT_PAYER,               'fvalue-int',    OFFER_SHIPMENT_PAYER),
-                $this->createFid(FID_PAYMENT_FORM,                 'fvalue-int',    OFFER_PAYMENT_FORM),
-                $this->createFid(FID_PROMO_OPRIONS,                'fvalue-int',    OFFER_PROMO),
-                $this->createFid(FID_PHOTO_1,                      'fvalue-image',  $fidPhotos[0]),
-                $this->createFid(FID_PHOTO_2,                      'fvalue-image',  $fidPhotos[1]),
-                $this->createFid(FID_PHOTO_3,                      'fvalue-image',  $fidPhotos[2]),
-                $this->createFid(FID_PHOTO_4,                      'fvalue-image',  $fidPhotos[3]),
-                $this->createFid(FID_PHOTO_5,                      'fvalue-image',  $fidPhotos[4]),
-                $this->createFid(FID_PHOTO_6,                      'fvalue-image',  $fidPhotos[5]),
-                $this->createFid(FID_PHOTO_7,                      'fvalue-image',  $fidPhotos[6]),
-                $this->createFid(FID_PHOTO_8,                      'fvalue-image',  $fidPhotos[7]),
-                $this->createFid(FID_ITEM_DESCRIPTION,             'fvalue-string', $deckHtml),
-                $this->createFid(FID_OFFER_TYPE,                   'fvalue-int',    OFFER_TYPE),
-                $this->createFid(FID_POST_CODE,                    'fvalue-string', OFFER_POST_CODE),
-				$this->createFid(FID_BANK_ACCOUNT_1,               'fvalue-string', OFFER_BANK_ACCOUNT),
-                $this->createFid(FID_SHIP_POST_SPEC_LETTER_PRIO_1, 'fvalue-float',    OFFER_SHIPMENT_COST)
+                $this->createFid(FID_ITEM_NAME,                    'fvalueString', $deckName),
+                $this->createFid(FID_CATEGORY,                     'fvalueInt',    OFFER_CATEGORY),
+                $this->createFid(FID_DURATION,                     'fvalueInt',    OFFER_DURATION),
+                $this->createFid(FID_ITEM_COUNT,                   'fvalueInt',    OFFER_ITEM_COUNT),
+                $this->createFid(FID_BUY_NOW_PRICE,                'fvalueFloat',  $deckPrice),
+                $this->createFid(FID_COUNTRY,                      'fvalueInt',    WEBAPI_COUNTRY),
+                $this->createFid(FID_STATE,                        'fvalueInt',    OFFER_STATE),
+                $this->createFid(FID_CITY,                         'fvalueString', OFFER_CITY),
+                $this->createFid(FID_SHIPMENT_PAYER,               'fvalueInt',    OFFER_SHIPMENT_PAYER),
+                $this->createFid(FID_PAYMENT_FORM,                 'fvalueInt',    OFFER_PAYMENT_FORM),
+                $this->createFid(FID_PROMO_OPRIONS,                'fvalueInt',    OFFER_PROMO),
+                $this->createFid(FID_PHOTO_1,                      'fvalueImage',  $fidPhotos[0]),
+                $this->createFid(FID_PHOTO_2,                      'fvalueImage',  $fidPhotos[1]),
+                $this->createFid(FID_PHOTO_3,                      'fvalueImage',  $fidPhotos[2]),
+                $this->createFid(FID_PHOTO_4,                      'fvalueImage',  $fidPhotos[3]),
+                $this->createFid(FID_PHOTO_5,                      'fvalueImage',  $fidPhotos[4]),
+                $this->createFid(FID_PHOTO_6,                      'fvalueImage',  $fidPhotos[5]),
+                $this->createFid(FID_PHOTO_7,                      'fvalueImage',  $fidPhotos[6]),
+                $this->createFid(FID_PHOTO_8,                      'fvalueImage',  $fidPhotos[7]),
+                $this->createFid(FID_ITEM_DESCRIPTION,             'fvalueString', $deckHtml),
+                $this->createFid(FID_OFFER_TYPE,                   'fvalueInt',    OFFER_TYPE),
+                $this->createFid(FID_POST_CODE,                    'fvalueString', OFFER_POST_CODE),
+                $this->createFid(FID_BANK_ACCOUNT_1,               'fvalueString', OFFER_BANK_ACCOUNT),
+                $this->createFid(FID_SHIP_POST_SPEC_LETTER_PRIO_1, 'fvalueFloat',  OFFER_SHIPMENT_COST)
             ),
-            'item-template-id' => 0,
-            'local-id' => 0,
-            'item-template-create' => array(
-                'item-template-option' => 0,
-                'item-template-name' => ''
+            'itemTemplateId' => 0,
+            'localId' => 0,
+            'itemTemplateCreate' => array(
+                'itemTemplateOption' => 0,
+                'itemTemplateName' => ''
             )
         );
         
@@ -216,12 +216,12 @@ class AllegroClient {
         }
         
         // Create new auction
-        $response = $this->soapClient->__soapCall("doNewAuctionExt", $request);   
+        $response = $this->soapClient->doNewAuctionExt($request);   
         
         // Debug info
         if($this->debug){
-            echo "Item ID:     " . $response['item-id'] . "\n";
-            echo "Fee charged: " . $response['item-info'] . "\n\n";
+            echo "Item ID:     " . $response->itemId . "\n";
+            echo "Fee charged: " . $response->itemInfo . "\n\n";
         } 
     }
     
