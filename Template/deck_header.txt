@@ -1,0 +1,11 @@
+// #############################
+// ### Deck Publisher Header ###
+// #############################
+//
+// @photo		http://redienss.zxq.net/deck/deck_box.png
+// @name		Example Deck 		
+// @price		200.00
+// @description 
+//     Deck description
+//	   <br/><br/><br/><br/><br/><br/>
+//

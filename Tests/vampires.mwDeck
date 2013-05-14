@@ -1,0 +1,59 @@
+﻿// Deck file for Magic Workstation (http://www.magicworkstation.com)
+//
+// @name		Vampire Horde Deck 		
+// @price		200.00
+//
+// @photo		thumb.jpg
+// @photo		http://images.nitrosell.com/product_images/6/1443/UPDBMana3Black.jpg
+// @photo		http://www.planeswalker.pl/images/mtg/akcesoria/302009-max-soft-sleeve.jpg
+//
+// @description 
+//     Witam! Mam dziś dla Was paczkę wygłodniałych wampirów ;)
+//     <br/><br/>
+//     Ten deck chce zjeść przeciwnika najszybciej jak się da!
+//     Wampiry zabijają dotykiem, latają, wysysają życie i ładują się counterami. 
+//     Jeden wampir wzmacnia resztę, drugi strzela i kosi co popadnie, 
+//	   a trzeci zjada skradzonie kreatury żeby się napakować. 
+//     <br/><br/>
+//	   Tutaj kilka ciekawych zagrywek:<br/>
+//     <ul>
+//     <li>[Rakish Heir], [Stromkirk Captain] - wzmacniają wszystkie inne wampiry, first strike i countery za każdy atak</li>
+//	   <li>[Traitorous Instinct] + [Bloodthrone Vampire] - kradniesz kreaturę, atakujesz nią, a na koniec ją zjadasz ;)</li>
+//	   <li>[Curse of the Nightly Hunt] + [Vampiric Fury] - provoke, opp nie ma się czym bronić, kontratak +2/+0!</li>
+//     <li>[Falkenrath Exterminator] + [Uncanny Speed] - exterminator atakuje, ładuje countery a potem strzela do innych kreatur</li>
+//     <li>[Dark Impostor] - zabija kreatury a potem używa ich zdolności</li>
+//	   <li>[Bloodthrone Vampire] + [Crossway Vampire] + [Haunted Fengraf] - zjadanie kumpla i wracanie go do gry</li>
+//	   </ul>
+//	   <br/><br/>
+//     Do decku dodaję 40 kart na sideboard, Deck-Box black mana i protektory!
+
+
+    4 [DKA] Haunted Fengraf
+    8 [RTR] Mountain (1)
+    8 [RTR] Swamp (1)
+    2 [ISD] Falkenrath Marauders
+    2 [DKA] Fiend of the Shadows
+    2 [AVR] Dark Impostor
+    4 [M13] Vampire Nighthawk
+    3 [DKA] Stromkirk Captain
+    4 [M13] Duskmantle Prowler
+    3 [AVR] Falkenrath Exterminator
+    2 [ISD] Rakish Heir
+    4 [ISD] Crossway Vampire
+    4 [M13] Bloodthrone Vampire
+    2 [ISD] Curse of the Nightly Hunt
+    4 [ISD] Vampiric Fury
+    4 [RTR] Traitorous Instinct
+SB: 2 [ISD] Falkenrath Noble
+SB: 4 [AVR] Rush of Blood
+SB: 2 [ISD] Screeching Bat|Stalking Vampire
+SB: 4 [M12] Vampire Outcasts
+SB: 2 [AVR] Blood Artist
+SB: 2 [AVR] Havengul Vampire
+SB: 2 [M13] Ring of Xathrid
+SB: 2 [M10] Vampire Aristocrat
+SB: 4 [DKA] Chosen of Markov|Markov's Servant
+SB: 4 [AVR] Uncanny Speed
+SB: 4 [WWK] Ruthless Cullblade
+SB: 4 [RTR] Stab Wound
+SB: 4 [AVR] Heirs of Stromkirk

@@ -1,0 +1,598 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+<style>
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-family: Book Antiqua;
+	font-weight: bold;	
+	text-shadow: black 0.1em 0.1em 0.2em;
+	margin: 0px 0px 0px 0px;
+	color: black;
+}
+
+p  {margin-top: 0px;}
+ul {margin-top: 0px;}
+
+a {
+	color: black;
+	text-decoration: none;
+	outline: none;
+}
+
+td {
+    font-size: large;
+}
+
+.header {
+	background-image: url("http://redienss.zxq.net/deck/background_header.jpg");
+	background-position:center; 
+	margin: 0px auto; 
+	width: 1158px; 
+	height: 60px;
+	padding: 20px;
+	text-align: center;
+	vertical-align: middle;
+	color: white; 
+}
+
+.body {
+	background-image: url("http://redienss.zxq.net/deck/background_body.jpg");
+	background-position:center; 
+	margin: 0px auto;
+	width: 1158px;  
+	min-height: 1000px;
+	padding: 20px;
+	color: black;
+	font-style: normal;
+	font-family: Book Antiqua;
+	font-weight: normal;	
+	font-size: medium;
+}
+
+.footer {
+	background-image: url("http://redienss.zxq.net/deck/background_header.jpg");
+	background-position:center; 
+	margin: 0px auto; 
+	width: 1158px; 
+	height: 20px;
+	padding: 10px 20px;
+	text-align: right;
+}
+
+.deckName {
+	margin: 10px;
+	color: white;
+}
+
+.section {
+	margin: 40px 0px 0px 0px;
+}
+
+.justified {
+	 text-align: justify; 
+	 text-justify: newspaper;
+}
+
+.deckBox {
+	position: relative;
+	float: right;
+	margin: 0px 20px 40px 40px;
+}
+
+.panel {
+	width: 1118px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.7);
+	margin-bottom: 20px;
+}
+
+.trimmed {
+	margin-bottom: 0px;
+}
+
+.cardGrid {
+	width: 100%;
+	font-style: italic;
+	font-size: large;
+	font-family: Book Antiqua;
+	font-weight: normal;	
+	margin-bottom: 20px;
+	border-spacing: 0px;
+}
+
+.cardGrid tr {
+	height: 20px;
+}
+
+.col1 {width:  5%;}
+.col2 {width:  30%;}
+.col3 {width:  35%;}
+.col4 {width:  25%;}
+.col5 {width:  5%;}
+
+.cardGrid tr:nth-child(even) {background: rgba(255, 255, 255, 0.2)}
+.cardGrid tr:nth-child(odd) {background: rgba(200, 200, 200, 0.2)}
+
+.tooltip {
+	color: #000099;
+	cursor: default;
+	text-decoration: none;
+	position: relative;
+}
+
+.tooltip span {
+	visibility: hidden;
+	position: absolute; 
+	left: 1.5em; 
+	top: 1.5em; 
+	margin-left: 0; 
+	z-index: 99;
+	opacity: 0.0;
+  	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+}
+
+.tooltip:hover span {
+	visibility: visible;
+	position: absolute; 
+	left: 1.5em; 
+	top: 1.5em; 
+	margin-left: 0; 
+	z-index: 99;
+	opacity: 1.0;
+  	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+}
+
+.cardImgFull {
+	width: 480px;
+	height: 680px;
+	border: 10px solid black;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-interpolation-mode: bicubic;
+	margin: 1px;
+}
+
+.cardImgSmall {
+	width: 240px;
+	height: 340px;
+	border: 5px solid black;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-interpolation-mode: bicubic;
+	margin: 1px;
+}
+
+.cardImgGatherer {
+    margin: 1px;
+}
+
+.setSymbol {
+    -moz-transform:scale(0.8);
+    -webkit-transform:scale(0.8);
+    transform:scale(0.8);
+}
+
+.gallery {
+    background: none;
+    border: 0px;
+	margin: 40px 0px 20px 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.footerContent {
+	margin: 0px;
+	font-style: normal;
+	font-family: Book Antiqua;
+	font-weight: bold;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	color: gray;
+	font-size: small;
+}
+
+
+</style>   
+
+
+<div class="header">
+	<h1 class="deckName">Vampire Horde Deck</h1>
+</div>
+
+<div class="body">
+	
+	<div class="panel">
+		<h3>Deck</h3>
+		<img class="deckBox" src="http://redienss.zxq.net/deck/deck_box.png"/>
+		<p class="justified">
+			Witam! Mam dziś dla Was paczkę wygłodniałych wampirów ;)
+<br/><br/>
+Ten deck chce zjeść przeciwnika najszybciej jak się da!
+Wampiry zabijają dotykiem, latają, wysysają życie i ładują się counterami. 
+Jeden wampir wzmacnia resztę, drugi strzela i kosi co popadnie, 
+a trzeci zjada skradzonie kreatury żeby się napakować. 
+<br/><br/>
+Tutaj kilka ciekawych zagrywek:<br/>
+<ul>
+<li><a class="tooltip" href="#">Rakish Heir<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=234441&type=card"/></span></a>, <a class="tooltip" href="#">Stromkirk Captain<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262676&type=card"/></span></a> - wzmacniają wszystkie inne wampiry, first strike i countery za każdy atak</li>
+<li><a class="tooltip" href="#">Traitorous Instinct<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=289228&type=card"/></span></a> + <a class="tooltip" href="#">Bloodthrone Vampire<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=280298&type=card"/></span></a> - kradniesz kreaturę, atakujesz nią, a na koniec ją zjadasz ;)</li>
+<li><a class="tooltip" href="#">Curse of the Nightly Hunt<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=226881&type=card"/></span></a> + <a class="tooltip" href="#">Vampiric Fury<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=247424&type=card"/></span></a> - provoke, opp nie ma się czym bronić, kontratak +2/+0!</li>
+<li><a class="tooltip" href="#">Falkenrath Exterminator<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=276499&type=card"/></span></a> + <a class="tooltip" href="#">Uncanny Speed<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240097&type=card"/></span></a> - exterminator atakuje, ładuje countery a potem strzela do innych kreatur</li>
+<li><a class="tooltip" href="#">Dark Impostor<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240153&type=card"/></span></a> - zabija kreatury a potem używa ich zdolności</li>
+<li><a class="tooltip" href="#">Bloodthrone Vampire<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=280298&type=card"/></span></a> + <a class="tooltip" href="#">Crossway Vampire<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=230779&type=card"/></span></a> + <a class="tooltip" href="#">Haunted Fengraf<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=245289&type=card"/></span></a> - zjadanie kumpla i wracanie go do gry</li>
+</ul>
+<br/><br/>
+Do decku dodaję 40 kart na sideboard, Deck-Box black mana i protektory!
+
+		</p>
+	</div>
+	
+	<div class="panel">
+		
+<h3>Karty (60)</h3>
+<table class="cardGrid">
+<colgroup>
+<col class="col1" />
+<col class="col2" />
+<col class="col3" />
+<col class="col4" />
+<col class="col5" />
+</colgroup>
+
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Haunted Fengraf<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=245289&type=card"/></span></a></td>
+<td>Land</td>
+<td></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=DKA&size=small&rarity=C"/></td>
+</tr>
+<tr>
+<td>8</td>
+<td><a class="tooltip" href="#">Mountain<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=289324&type=card"/></span></a></td>
+<td>Basic Land — Mountain</td>
+<td></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=RTR&size=small&rarity=C"/></td>
+</tr>
+<tr>
+<td>8</td>
+<td><a class="tooltip" href="#">Swamp<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=289320&type=card"/></span></a></td>
+<td>Basic Land — Swamp</td>
+<td></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=RTR&size=small&rarity=C"/></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a class="tooltip" href="#">Falkenrath Marauders<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=246954&type=card"/></span></a></td>
+<td>Creature — Vampire Warrior</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=3&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=ISD&size=small&rarity=R"/></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a class="tooltip" href="#">Fiend of the Shadows<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262837&type=card"/></span></a></td>
+<td>Creature — Vampire Wizard</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=3&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=DKA&size=small&rarity=R"/></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a class="tooltip" href="#">Dark Impostor<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240153&type=card"/></span></a></td>
+<td>Creature — Vampire Assassin</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=2&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=AVR&size=small&rarity=R"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Vampire Nighthawk<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=260989&type=card"/></span></a></td>
+<td>Creature — Vampire Shaman</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=1&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=M13&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>3</td>
+<td><a class="tooltip" href="#">Stromkirk Captain<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262676&type=card"/></span></a></td>
+<td>Creature — Vampire Soldier</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=1&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=DKA&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Duskmantle Prowler<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=265728&type=card"/></span></a></td>
+<td>Creature — Vampire Rogue</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=3&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=M13&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>3</td>
+<td><a class="tooltip" href="#">Falkenrath Exterminator<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=276499&type=card"/></span></a></td>
+<td>Creature — Vampire Archer</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=1&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=AVR&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a class="tooltip" href="#">Rakish Heir<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=234441&type=card"/></span></a></td>
+<td>Creature — Vampire</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=2&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=ISD&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Crossway Vampire<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=230779&type=card"/></span></a></td>
+<td>Creature — Vampire</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=1&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=ISD&size=small&rarity=C"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Bloodthrone Vampire<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=280298&type=card"/></span></a></td>
+<td>Creature — Vampire</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=1&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=M13&size=small&rarity=C"/></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a class="tooltip" href="#">Curse of the Nightly Hunt<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=226881&type=card"/></span></a></td>
+<td>Enchantment — Aura Curse</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=2&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=ISD&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Vampiric Fury<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=247424&type=card"/></span></a></td>
+<td>Instant</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=1&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=ISD&size=small&rarity=C"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Traitorous Instinct<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=289228&type=card"/></span></a></td>
+<td>Sorcery</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=3&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=RTR&size=small&rarity=C"/></td>
+</tr>
+</table>
+		
+<h3>Sideboard (40)</h3>
+<table class="cardGrid">
+<colgroup>
+<col class="col1" />
+<col class="col2" />
+<col class="col3" />
+<col class="col4" />
+<col class="col5" />
+</colgroup>
+
+<tr>
+<td>2</td>
+<td><a class="tooltip" href="#">Falkenrath Noble<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=226751&type=card"/></span></a></td>
+<td>Creature — Vampire</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=3&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=ISD&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Rush of Blood<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240183&type=card"/></span></a></td>
+<td>Instant</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=2&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=AVR&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a class="tooltip" href="#">Screeching Bat<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=221211&type=card"/></span></a></td>
+<td>Creature — Bat</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=2&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=ISD&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Vampire Outcasts<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220127&type=card"/></span></a></td>
+<td>Creature — Vampire</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=2&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=M12&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a class="tooltip" href="#">Blood Artist<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240178&type=card"/></span></a></td>
+<td>Creature — Vampire</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=1&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=AVR&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a class="tooltip" href="#">Havengul Vampire<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240152&type=card"/></span></a></td>
+<td>Creature — Vampire</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=3&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=AVR&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a class="tooltip" href="#">Ring of Xathrid<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=259692&type=card"/></span></a></td>
+<td>Artifact — Equipment</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=2&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=M13&size=small&rarity=U"/></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a class="tooltip" href="#">Vampire Aristocrat<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190563&type=card"/></span></a></td>
+<td>Creature — Vampire Rogue</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=2&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=M10&size=small&rarity=C"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Chosen of Markov<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=243229&type=card"/></span></a></td>
+<td>Creature — Human</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=2&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=DKA&size=small&rarity=C"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Uncanny Speed<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240097&type=card"/></span></a></td>
+<td>Instant</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=1&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=AVR&size=small&rarity=C"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Ruthless Cullblade<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194678&type=card"/></span></a></td>
+<td>Creature — Vampire Warrior</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=1&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=WWK&size=small&rarity=C"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Stab Wound<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=270791&type=card"/></span></a></td>
+<td>Enchantment — Aura</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=2&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=B&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=RTR&size=small&rarity=C"/></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a class="tooltip" href="#">Heirs of Stromkirk<span><img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240201&type=card"/></span></a></td>
+<td>Creature — Vampire</td>
+<td><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=2&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/><img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=R&type=symbol"/></td>
+<td><img class="setSymbol shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=AVR&size=small&rarity=C"/></td>
+</tr>
+</table>
+	</div>
+	
+	<div class="panel">
+		
+        
+<h3>Skład kolekcji (100 kart)</h3>
+<ul>
+<li>6 x Rare</li>
+<li>36 x Uncommon</li>
+<li>58 x Common</li>
+</ul><br/>
+
+		<h3>Dodatki</h3>
+		<ul>
+			<li>Deck Box Ultra-PRO na karty</li>
+			<li>100 protektorów MAX Sleeves</li>
+		</ul><br/>
+		
+		<h3>Kontakt</h3>
+		<ul>
+			<li>tel.: 501-443-776</li>
+			<li>e-mail: <a href="mailto:redienss@gmail.com">redienss@gmail.com</a></li>
+		</ul><br/>
+		
+		<h3>Wysyłka</h3>
+		<p>
+            Wysyłka jest darmowa. Karty wysyłam paczką pocztową priorytetową.
+		</p>
+		
+	</div>	
+	
+	
+<div class="panel trimmed">
+<h3>Galeria</h3>
+<hr/>
+<div class="gallery">
+
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=245289&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=245289&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=289324&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=289324&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=289320&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=289320&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=246954&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=246954&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262837&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262837&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240153&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240153&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=260989&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=260989&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262676&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262676&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=265728&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=265728&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=276499&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=276499&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=234441&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=234441&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=230779&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=230779&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=280298&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=280298&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=226881&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=226881&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=247424&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=247424&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=289228&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=289228&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=226751&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=226751&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240183&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240183&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=221211&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=221211&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220127&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220127&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240178&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240178&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240152&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240152&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=259692&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=259692&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190563&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190563&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=243229&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=243229&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240097&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240097&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194678&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194678&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=270791&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=270791&type=card"/>
+</a>
+<a href="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240201&type=card" target="_blank">
+<img class="cardImgGatherer shadow" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240201&type=card"/>
+</a>
+</div>
+</div>
+	
+</div>
+
+<div class="footer">
+	<a href="mailto:redienss@gmail.com"><span class="footerContent">redienss@gmail.com</span></a>
+</div>
