@@ -1,8 +1,6 @@
 <?php
 
-define('WEBAPI_CONSTS_INI', 'Config\webapi_consts.ini');
-define('WEBAPI_ENV_TEST', 'Config\webapi_env_test.ini');
-define('WEBAPI_ENV_PROD', 'Config\webapi_env_prod.ini');
+define ('WEBAPI_CONSTS_INI', 'Config\webapi_consts.ini');
 
 /**
  * MTG Allegro WebAPI Client
@@ -10,6 +8,10 @@ define('WEBAPI_ENV_PROD', 'Config\webapi_env_prod.ini');
  * @author Tomasz Szneider
  */
 class AllegroClient {
+    
+    // Consts
+    const WEBAPI_ENV_TEST   = 'Config\webapi_env_test.ini';
+    const WEBAPI_ENV_PROD   = 'Config\webapi_env_prod.ini';
     
     // Fields
     private $debug;

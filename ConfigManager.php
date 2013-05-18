@@ -16,7 +16,7 @@ class ConfigManager
 	 */	
 	public static function load($file)
 	{
-		// Load .ini file	
+        // Load .ini file	
 	    $config = parse_ini_file(__DIR__."\\".$file);
 		
 		// Define consts   

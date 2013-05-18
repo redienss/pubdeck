@@ -48,10 +48,10 @@ class Script {
         
         // Get env param
         if($this->isParamGiven('-t', '--test')){
-            $webApiEnv = WEBAPI_ENV_TEST;
+            $webApiEnv = AllegroClient::WEBAPI_ENV_TEST;
         } else 
         if($this->isParamGiven('-p', '--prod')){
-            $webApiEnv = WEBAPI_ENV_PROD;
+            $webApiEnv = AllegroClient::WEBAPI_ENV_PROD;
         } else {
             $this->showHelp();
         }
