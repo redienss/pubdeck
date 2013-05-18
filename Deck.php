@@ -1,8 +1,5 @@
 <?php
 
-require_once "CardList.php";
-require_once "Template.php";
-
 define('TEMPLATE_FILE', 'Template\deck_template.html');
 define('CSS_STYLE_FILE', 'Template\mtg_style.css');
 define('DECK_HEADER_FILE', 'Template\deck_header.txt');

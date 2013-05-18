@@ -1,0 +1,34 @@
+----------------------------------
+MTG Publisher
+----------------------------------
+Tool for publishing MTG card auctions via Allegro WebAPI
+
+Usage:
+   mtgpub --cards [--options] cards.xml
+   mtgpub --deck  [--options] deck.xml
+
+Other:
+	-h --help	show this help
+	-e --example	create example of XML input file    
+   
+Auction type:
+	-s --cards	publish multiple auctions with single cards
+	-d --deck	publish deck
+
+Environment:
+	-t --test	execute on test environment
+	-p --prod	execute on production environment
+
+Examples:
+	
+	Generate example XML templates:
+		mtgpub --example --cards template.xml
+		mtgpub --example –-deck  template.xml
+	
+	Publish singles:
+		mtgpub --cards --test cards.xml
+		mtgpub --cards --prod cards.xml
+	
+	Publish deck:
+		mtgpub --deck --test deck.xml
+		mtgpub --deck --prod deck.xml

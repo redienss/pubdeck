@@ -1,9 +1,5 @@
 <?php
 
-require_once 'Card.php';
-require_once 'CardList.php';
-require_once 'Deck.php';
-
 /**
  * MTG HTML Deck Template class
  * 

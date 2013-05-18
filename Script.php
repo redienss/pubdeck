@@ -1,8 +1,5 @@
 <?php
 
-require_once 'AllegroClient.php';
-require_once 'ConfigManager.php';
-
 ConfigManager::load('Config\settings.ini');
 
 /**

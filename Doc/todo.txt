@@ -1,0 +1,17 @@
+-----------------------------------------
+MTG_DB
+-----------------------------------------
+ - dodać nowe edycje w DB
+ - ściągnąć ceny z mtg.net do DB
+ - ściągnąć ceny z planeswalkera do DB
+ - ściągnąć ceny z flamberga do DB
+ - ściągnąć ceny z dwarfa do DB
+ - wyliczyć AVG ze wszystkich cenników
+ - pozmieniać daty na pole "DATE"
+ - skrypt migrujący dane gatherer extractor > DB
+
+
+-----------------------------------------
+pubdeck
+-----------------------------------------
+ - class autoloading + namespaces (use ...)

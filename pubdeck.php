@@ -1,6 +1,10 @@
 <?php
 
-require_once 'Script.php';
+function __autoload($class)
+{
+    $parts = explode('\\', $class);
+    require_once end($parts) . '.php';
+}
 
 $script = new Script($argv);
 $script->execute();

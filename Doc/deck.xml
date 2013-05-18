@@ -1,0 +1,43 @@
+<deck>
+	<name>Example Deck</name>
+	<price>200.00</price>
+	<photos>
+		<photo>photo1_thumb.jpg</photo>
+		<photo>photo2.jpg</photo>
+		<photo>photo3.jpg</photo>
+		<photo>photo4.png</photo>
+		<photo>photo5.png</photo>
+		<photo>http://www.example.com/photo6.jpg</photo>
+		<photo>http://www.example.com/photo7.jpg</photo>
+		<photo>http://www.example.com/photo8.jpg</photo>
+	</photos>
+	<description>
+		Here you can add own auction description [br/]
+		You can use html tags in square breckets [br/]
+		You can also add card links like below:
+		[ul]
+			[li]Example card link: (@Dark Ritual)[/li]
+			[li]Example card link: (@Shock)[/li]
+			[li]Example card link: (@Black Lotus)[/li]
+		[/ul]
+	</description>
+	<cards>
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+	</cards>
+	<sideboard>
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+		<card count="4" edition="DKA" name="Haunted Fengraf" />
+	</sideboard>
+</deck>

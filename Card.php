@@ -1,8 +1,5 @@
 <?php
 
-require_once 'ConfigManager.php';
-require_once 'MtgNetClient.php';
-
 // Load MySQL config
 ConfigManager::load('Config\mysql.ini');
 

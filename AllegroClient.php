@@ -1,8 +1,5 @@
 <?php
 
-require_once "Deck.php";
-require_once "ConfigManager.php";
-
 define('WEBAPI_CONSTS_INI', 'Config\webapi_consts.ini');
 define('WEBAPI_ENV_TEST', 'Config\webapi_env_test.ini');
 define('WEBAPI_ENV_PROD', 'Config\webapi_env_prod.ini');
