@@ -70,6 +70,8 @@ class Script {
            $pricesEnabled = false;
         }
         
+        echo "\n";
+        
         // Load deck from file
         $deck = new Deck($deckFile);
         

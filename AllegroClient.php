@@ -215,7 +215,7 @@ class AllegroClient {
         }
         
         // Create new auction
-        $response = $this->soapClient->doNewAuctionExt($request);   
+        $response = $this->soapClient->doNewAuctionExt($request);
         
         // Debug info
         if($this->debug){

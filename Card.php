@@ -1,8 +1,5 @@
 <?php
 
-// Load MySQL config
-ConfigManager::load('Config\mysql.ini');
-
 /**
  * MTG Card class
  * 
@@ -24,69 +21,6 @@ class Card {
     private $mtgNetCache;
 
     /**
-     * Load card data from mtg_db, data is stored in object fields
-     * 
-     * @param string $name - card name
-     * @param string $set  - card set
-     * 
-     * @return array
-     */
-    private function loadDataFromDB($name, $set) {
-        // Convert special chars
-        $name = addslashes($name);
-
-        // Connect to MySQL
-        $con = mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD);
-        mysql_select_db(MYSQL_DB_NAME, $con);
-
-        // Select card
-        $query = "select nid, nname, nset, ntype, nrarity, nmanacost, nrating, nartist from ncards where nset='$set' and nname='$name'";
-        $result = mysql_query($query, $con);
-
-        // When no result
-        if ($result != false) {
-            // Fetch data
-            $row = mysql_fetch_array($result);
-
-            // Set data in object
-            $this->id = (int) $row["nid"];
-            $this->name = $row["nname"];
-            $this->setCode = $row["nset"];
-            $this->type = $row["ntype"];
-            $this->rarity = $row["nrarity"];
-            $this->mana = $row["nmanacost"];
-            $this->rating = round((float) $row["nrating"], 1);
-            $this->artist = $row["nartist"];
-        }
-
-        // Get alternate set names
-        $query = "select ncode_mtgnet, ncode_gatherer from nsets where ncode='$set'";
-        $result = mysql_query($query, $con);
-
-        // When no result
-        if ($result != false) {
-            // Fetch data
-            $row = mysql_fetch_array($result);
-
-            // Set data in object
-            $this->setCodeMtgNet = $row["ncode_mtgnet"];
-            $this->setCodeGatherer = $row["ncode_gatherer"];
-        }
-
-        // Close connection
-        mysql_close($con);
-    }
-
-    /**
-     * Get card name in zymic format e.g.: Mountain (1) = Mountain1
-     *  
-     * @return string - card name in zymic format
-     */
-    private function getZymicName() {
-        return preg_replace('/(.*)\s\(([0-9])\)/', '$1$2', $this->name);
-    }
-
-    /**
      * Compare two cards (ascending) by Gatherer rating
      * 
      * Returns
@@ -102,10 +36,7 @@ class Card {
     public static function compareByRatingAsc($card1, $card2) {
         $r1 = $card1->getRating();
         $r2 = $card2->getRating();
-
-        if ($r1 == $r2) {
-            return 0;
-        }
+        if ($r1 == $r2) return 0;
         return ($r1 < $r2) ? -1 : 1;
     }
 
@@ -125,15 +56,12 @@ class Card {
     public static function compareByRatingDesc($card1, $card2) {
         $r1 = $card1->getRating();
         $r2 = $card2->getRating();
-
-        if ($r1 == $r2) {
-            return 0;
-        }
+        if ($r1 == $r2) return 0;
         return ($r1 < $r2) ? 1 : -1;
     }
 
     /**
-     * Construct new card, additional info is auto-loaded from mtg_db
+     * Construct new card
      * 
      * @param string $name  - card name
      * @param string $set   - card set
@@ -142,10 +70,31 @@ class Card {
      * @return void
      */
     public function Card($name, $set, $count) {
-        $this->loadDataFromDB($name, $set);
-        $this->count = $count;
+        $this->name    = $name;
+        $this->setCode = $set;
+        $this->count   = $count;
     }
-
+    
+    /**
+     * Set data form Card DB row
+     * 
+     * @param array $row - row from database Card table 
+     * 
+     * @return void
+     */
+    public function setDataFromDbRow($row){
+        $this->id              = (int) $row["nid"];
+        $this->name            = $row["nname"];
+        $this->setCode         = $row["nset"];
+        $this->type            = $row["ntype"];
+        $this->rarity          = $row["nrarity"];
+        $this->mana            = $row["nmanacost"];
+        $this->rating          = round((float) $row["nrating"], 1);
+        $this->artist          = $row["nartist"];
+        $this->setCodeMtgNet   = $row["ncode_mtgnet"];
+        $this->setCodeGatherer = $row["ncode_gatherer"];
+    }
+            
     /**
      * Get card Multiverse ID
      * 
@@ -257,6 +206,17 @@ class Card {
     }
 
     /**
+     * Add card count
+     * 
+     * @param int $count - card count to add
+     * 
+     * @return void
+     */
+    public function addCount($count) {
+        $this->count += $count;
+    }
+    
+    /**
      * Get gatherer url to card info
      * 
      * @return string - card image url
@@ -275,30 +235,12 @@ class Card {
     }
 
     /**
-     * Get zymic url to card image
-     * 
-     * @return string - card image url
-     */
-    public function getImgUrlZymic() {
-        return 'http://redienss.zxq.net/pics/' . $this->setCode . '/' . $this->getZymicName() . '.full.jpg';
-    }
-
-    /**
      * Get card image form gatherer
      * 
      * @return string - image binary data
      */
     public function getImgGatherer() {
         return file_get_contents($this->getImgUrlGatherer());
-    }
-
-    /**
-     * Get card image from zymic
-     * 
-     * @return string - image binary data
-     */
-    public function getImgZymic() {
-        return file_get_contents($this->getImgUrlZymic());
     }
 
     /**
@@ -368,5 +310,5 @@ class Card {
     public function isCommon() {
         return $this->rarity == "C";
     }
-
+    
 }

@@ -46,7 +46,7 @@ class Template {
         
         // Create links for all card names
         foreach ($cardNames as $cardName) {
-            $card = $collection->findCard($cardName);
+            $card = $collection->findCardByName($cardName);
             $tooltipLink = $this->createHtmlCardTooltip($card);
             $description = preg_replace("/\[$cardName\]/", $tooltipLink, $description);
         }
@@ -81,7 +81,7 @@ class Template {
         $name = $card->getName();
         
         // Return tooltip link
-        return '<a class="tooltip" href="#">'.$name.'<span>'.$img.'</span></a>';
+        return '<a class="cardTooltip" href="#">'.$name.'<span>'.$img.'</span></a>';
     }
     
     /**

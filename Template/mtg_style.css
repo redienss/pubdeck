@@ -21,7 +21,7 @@ td {
 }
 
 .header {
-	background-image: url("http://redienss.zxq.net/deck/background_header.jpg");
+	background-image: url('http://imageshack.us/a/img208/8563/8btj.png');
 	background-color: #404040;
 	background-position:center; 
 	margin: 0px auto; 
@@ -34,7 +34,7 @@ td {
 }
 
 .body {
-	background-image: url("http://redienss.zxq.net/deck/background_body.jpg");
+	background-image: url('http://img802.imageshack.us/img802/8335/xer7.png');
 	background-color: #FFD6AD;
 	background-position:center; 
 	margin: 0px auto;
@@ -49,7 +49,7 @@ td {
 }
 
 .footer {
-	background-image: url("http://redienss.zxq.net/deck/background_header.jpg");
+	background-image: url('http://imageshack.us/a/img208/8563/8btj.png');
 	background-color: #404040;
 	background-position:center; 
 	margin: 0px auto; 
@@ -113,14 +113,14 @@ td {
 .cardGrid tr:nth-child(even) {background: rgba(255, 255, 255, 0.2)}
 .cardGrid tr:nth-child(odd) {background: rgba(200, 200, 200, 0.2)}
 
-.tooltip {
+.cardTooltip {
 	color: #000099;
 	cursor: default;
 	text-decoration: none;
 	position: relative;
 }
 
-.tooltip span {
+.cardTooltip span {
 	visibility: hidden;
 	position: absolute; 
 	left: 1.5em; 
@@ -134,7 +134,7 @@ td {
 	-webkit-transition:.3s;
 }
 
-.tooltip:hover span {
+.cardTooltip:hover span {
 	visibility: visible;
 	position: absolute; 
 	left: 1.5em; 
