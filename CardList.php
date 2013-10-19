@@ -41,6 +41,8 @@ class CardList extends ArrayObject {
      */
     public function loadDataFromDB() {
                 
+        if($this->count() == 0) return;
+        
         $con = mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD);
         mysql_select_db(MYSQL_DB_NAME, $con);
 

@@ -39,7 +39,9 @@ class Template {
      * @return string - HTML description with card links
      */
     private function createHtmlDescription($description, $collection)
-    {        
+    {    
+        echo "Creating deck description...\n";
+        
         // Recognize card names in description     
         preg_match_all("/\[(.*?)\]/", $description, $matches);
         $cardNames = $matches[1];
@@ -47,8 +49,13 @@ class Template {
         // Create links for all card names
         foreach ($cardNames as $cardName) {
             $card = $collection->findCardByName($cardName);
-            $tooltipLink = $this->createHtmlCardTooltip($card);
-            $description = preg_replace("/\[$cardName\]/", $tooltipLink, $description);
+            if(!is_null($card)){
+                $tooltipLink = $this->createHtmlCardTooltip($card);
+                $description = preg_replace("/\[$cardName\]/", $tooltipLink, $description);
+            } else {
+                echo "Couldn't create tooltip for: $cardName\n";
+            }
+            
         }
         
         // Return description with liks
@@ -63,6 +70,9 @@ class Template {
      * @return string - image html
      */
     private function createHtmlCardImage($card){
+//        $e = new Exception();
+//        echo $e->getTraceAsString();
+//        print_r($card);
         $url = $card->getImgUrlGatherer();
         return '<img class="cardImgGatherer shadow" src="'.$url.'"/>';
     }
@@ -178,7 +188,9 @@ class Template {
      * @return string - card list HTML
      */
     private function createHtmlCardList($header, $cards)
-    {            
+    {           
+        if($cards->count() == 0) return '';
+        
         // Create rows
         $rowsHtml = '';
         foreach ($cards as $card) {
