@@ -328,7 +328,7 @@ class Template {
     {    
         // Gether data for template
         $cssStyle    = $this->cssStyle;
-        $name        = $deck->getName();
+        $name        = $deck->getAuctionTitle();
         $description = $deck->getDescription();
         $cards       = $deck->getCards();
         $sideboard   = $deck->getSideboard();

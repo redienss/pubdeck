@@ -51,7 +51,9 @@ class CardList extends ArrayObject {
  
         while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
             $card = $this->findCardByNameAndSet($row["nname"], $row["nset"]);
-            $card->setDataFromDbRow($row);
+            if(!is_null($card)){
+                $card->setDataFromDbRow($row);   
+            }
         }
 
         mysql_close($con);

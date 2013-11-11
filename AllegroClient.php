@@ -156,9 +156,9 @@ class AllegroClient {
      * @return void 
      */
     public function createDeckAuction($deck)
-    {
+    {        
         // Get deck params
-        $deckName = $deck->getName();
+        $deckName = $deck->getAuctionTitle();
         $deckPrice = $deck->getPirce();
         $deckPhotos = $deck->getPhotos();
         $deckHtml = $deck->toHtml();
@@ -166,6 +166,9 @@ class AllegroClient {
         // Init photos
         $idx = 0;
         $fidPhotos = array(null, null, null, null, null, null, null, null);
+        
+        // Add first card on decklist as thumbnail photo
+        $fidPhotos[$idx++] = $thumbCard = $deck->getCard(0)->getImgGatherer();
         
         // Get content of each phtot
         foreach($deckPhotos as $link) {

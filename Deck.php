@@ -190,7 +190,7 @@ class Deck {
     public function getName() {
         return $this->name;
     }
-
+    
     /**
      * Get deck price
      * 
@@ -300,6 +300,15 @@ class Deck {
     public function getCardCount() {
         return $this->cards->getCount() + $this->sideboard->getCount();
     }
+    
+    /**
+     * Get card by index 
+     * 
+     * @return Card - found card
+     */
+    public function getCard($index) {
+        return $this->cards[$index];
+    }
 
     /**
      * Return deck as HTML page
@@ -334,5 +343,30 @@ class Deck {
         $html = $this->toHtml($ratingEnabled, $pricesEnabled);
         file_put_contents($exportFile, $html);
     }
-
+    
+    /**
+     * Create auction title from deck name
+     * 
+     * @return string - deck auction name
+     */
+    public function getAuctionTitle() {
+        
+        // Get stats
+        $m = $this->getCountM();
+        $r = $this->getCountR();
+        $u = $this->getCountU();
+        $c = $this->getCountC();
+        
+        // Create stats section
+        $statsArr = array();
+        if($m) $statsArr[] = "{$m}M";
+        if($r) $statsArr[] = "{$r}R";
+        if($u) $statsArr[] = "{$u}U";
+        if($c) $statsArr[] = "{$c}C";
+        $stats = implode(" ", $statsArr);
+        
+        // Create auction title
+        $name = $this->getName();
+        return "$name ($stats) [redienss]";
+    }
 }

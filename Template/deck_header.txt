@@ -2,10 +2,14 @@
 // ### Deck Publisher Header ###
 // #############################
 //
-// @photo		http://redienss.zxq.net/deck/deck_box.png
-// @name		Example Deck 		
-// @price		200.00
+// @name		Example Deck
+// @price		50.00
 // @description 
-//     Deck description
-//	   <br/><br/><br/><br/><br/><br/>
-//
+// Witam! Przedmiotem aukcji jest deck EXAMPLE.
+// <br/><br/>
+// W zestawie znajduje się:
+// <ul>
+// <li>Deck: 60 kart</li>
+// <li>Sideboard: 40 kart</li>
+// <li><b>GRATIS</b>: 100 dodatkowych commonów i uncommonów z mojej kolekcji!</li>
+// </ul>

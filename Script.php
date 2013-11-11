@@ -80,7 +80,7 @@ class Script {
         $deck->exportToHtml($previewFile, $ratingEnabled, $pricesEnabled);
         
         // Show deck info
-        echo "\n"."Name:      ".$deck->getName();
+        echo "\n"."Name:      ".$deck->getAuctionTitle();
         echo "\n"."Price:     ".$deck->getPirce();
         echo "\n"."Mythic:    ".$deck->getCountM();
         echo "\n"."Rare:      ".$deck->getCountR();
@@ -90,6 +90,16 @@ class Script {
         echo "\n";
         echo "\n"."Preview:   ".$previewFile;
         echo "\n";
+        
+        // Check auction title length
+        $title = $deck->getAuctionTitle();
+        $length = strlen($title);
+        $maxLen = 50;
+        if($length > $maxLen){
+            echo "\nDeck title is too long ($length). Please trim it to $maxLen.\n";
+            exit();
+        }
+        
         
         // Confirm creating new auction
         $this->showConfirmation('Do you want create new auction?');
